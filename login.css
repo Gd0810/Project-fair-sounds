@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+    color: white;
+    font-weight: 500;
+    display: flex;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+main {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    order: 2; 
+}
+
+main h1 {
+    color: #8880FE;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+
+main form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main form label {
+    display: flex;
+    flex-direction: column;
+}
+
+main form label span {
+    font-size: 1.1rem;
+    margin-top: 2rem;
+}
+
+main form input[type="submit"] {
+    cursor: pointer;
+    width: 50%;
+    height: 49px;
+    margin-top: 3rem;
+    border: none;
+    border-radius: 32px;
+    background: #6C63FF;
+    color: white;
+    font-size: 1.1rem;
+    transition: all .3s ease-in-out;
+}
+
+main form input[type="submit"]:hover {
+    background: #5952d4;
+}
+
+.fp {
+   margin-top:1rem;
+   color: #636fA5;
+    }
+
+.signup-link {
+    margin-top: 1rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.signup-link a {
+color: #636FA4;
+
+}
+
+
+.input-field {
+  max-width: 380px;
+  width: 100%;
+  background-color: #f0f0f0;
+  margin: 10px 0;
+  height: 55px;
+  border-radius: 55px;
+  display: grid;
+  grid-template-columns: 15% 85%;
+  padding: 0 0.4rem;
+  position: relative;
+}
+
+.input-field i {
+  text-align: center;
+  line-height: 55px;
+  color: #acacac;
+  transition: 0.5s;
+  font-size: 1.1rem;
+}
+
+.input-field input {
+  background: none;
+  outline: none;
+  border: none;
+  line-height: 1;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.input-field input::placeholder {
+  color: #aaa;
+  font-weight: 500;
+}
+
+section.images {
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 4rem;
+    order: 1; 
+}
+
+section.images img {
+    width: 100%;
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+    section.images img {
+        width: 110%;
+    }
+
+}
+
+@media only screen and (max-width: 900px) {
+    section.images {
+        display: none;
+        visibility: hidden;
+    }
+
+    main {
+        width: 100vw;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    main h1 {
+        font-size: 2.30rem;
+    }
+
+    main form label span, main form input[type="submit"] {
+        font-size: 1rem;
+    }
+
+    .input-field input {
+        font-size: 0.9rem; /* Adjust font size for smaller screens */
+    }
+}
